@@ -1,0 +1,6 @@
+{
+    "cmake.debugConfig": {
+        "args": ["hello", "world"]
+    },
+    "cmake.launchBehavior": "reuseTerminal"
+}

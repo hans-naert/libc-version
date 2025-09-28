@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "build",
+      "command": "cmake",
+      "args": ["--build", "build"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}
