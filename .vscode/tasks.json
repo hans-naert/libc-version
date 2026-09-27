@@ -2,21 +2,24 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "type": "cppbuild",
             "label": "Build without CMake",
-            "type": "shell",
-            "command": "gcc",
+            "command": "/usr/bin/aarch64-linux-gnu-gcc",
             "args": [
+                "-fdiagnostics-color=always",
                 "-g",
+                "libc-version.c",
                 "-o",
-                "libc-version",
-                "libc-version.c"
+                "libc-version"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "options": {
+                "cwd": "${workspaceFolder}"
             },
-            "problemMatcher": ["$gcc"],
-            "detail": "Build libc-version program using gcc directly (no CMake)"
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: /usr/bin/aarch64-linux-gnu-gcc"
         }
     ]
 }
