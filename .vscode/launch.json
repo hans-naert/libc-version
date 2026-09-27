@@ -10,7 +10,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/libc-version",
-            "args": [],
+            "args": ["argument 1", "argument 2"],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "Build without CMake",
